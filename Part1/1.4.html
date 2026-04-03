@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>页面布局设计</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*header*/
+        header{
+            width: auto;
+            height: 6vh;
+            padding: 0 60px;
+            background-color: #20293C;
+            display: flex;
+            line-height: 6vh;
+        }
+        header .icon{
+            width: 35px;
+            vertical-align:-5px;
+        }
+        header .pic{
+            width: 50px;
+            margin-left: 25px;
+            border: #4A81F5 3px solid;
+            vertical-align:-17px;
+            border-radius: 50%;
+        }
+        header p{
+            flex: 1;
+            color: white;
+        }
+        header p:nth-child(1){
+            font-size:25px;;
+        }
+        header p:nth-child(2){
+             flex: 2;
+             text-align: center;
+             font-size: 20px;
+         }
+        header p:nth-child(3){
+            text-align: right;
+            font-size: 25px;
+        }
+
+        header a{
+            color: white;
+            text-decoration: none;
+            margin:0 15px;
+        }
+
+        /*main*/
+        main{
+            height: 88vh;
+            display: flex;
+            background-color: white;
+        }
+
+
+        .nav{
+            flex: 1;
+        }
+        .nav img{
+            width: 25px;
+            vertical-align:-2px;
+        }
+        .nav ul{
+            color: #6F7889;
+        }
+        .nav ul li{
+            font-size: 27px;
+            text-indent: 45px;
+            margin-top: 30px;
+
+        }
+        /*.nav ul li a{*/
+        /*    color: #6F7889;*/
+        /*    text-decoration: none;*/
+        /*}*/
+
+
+        
+        .mid{
+            flex: 7;
+            background-color: #F5F7FA;
+        }
+
+        
+
+        .information{
+            /*height: 88vh;*/
+            flex: 2;
+            position: relative;
+            text-align: center;
+        }
+        .information img{
+            display: block;
+            width: 150px;
+            margin: 60px auto 13px auto;
+            border-radius: 50%;
+            border: 5px solid #7b8cee;
+        }
+        .information .name{
+            font-size: 45px;
+        }
+        .information p{
+            font-size: 30px;
+            color: #6ca6f4;
+            margin-top: 55px;
+        }
+        .line{
+            width: 500px;
+            height: 5px;
+            margin: 40px auto;
+            background: linear-gradient(to right, transparent, #a78bfa, transparent);;
+        }
+        .slogan p{
+            font-size: 35px;
+            color: #666666;
+        }
+        .web{
+            width: auto;
+            height: 100px;
+            margin-top: 45px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .web img{
+            width: 75px;
+            border-radius: 50%;
+            /*vertical-align: middle;*/
+            margin: 0 90px;
+            border: none;
+        }
+        .email{
+            height: 50px;
+            display: inline-flex;
+            line-height: 50px;
+            font-size: 30px;
+            color: #A69999;
+        }
+        .email img{
+            width: 30px;
+            height: 30px;
+            border: none;
+            margin: 10px 0 0 10px;
+        }
+
+
+
+
+
+
+        /*footer*/
+        footer{
+            position: absolute;
+            bottom:0;
+            left: 0;
+            width: 100%;
+            height: 6vh;
+            background-color: #20293C;
+            color: white;
+            text-align: center;
+            line-height: 6vh;
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+        a{
+            color: #6F7889;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: #FF5000;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            <img src="./src/首页.png." alt="" class="icon">
+            工型布局
+
+        </p>
+        <p>
+            <a href="#">首页</a>
+            <a href="#">关于</a>
+            <a href="#">产品</a>
+        </p>
+        <p>Rainan<img src="./src/picture.jpg" class="pic"></p>
+    </header>
+
+
+
+    <main>
+        <div class="nav">
+            <ul>
+                <li>
+                    <img src="./src/仪表盘.png" alt="">
+                    <a href="#">仪表盘</a>
+                </li>
+                <li>
+                    <img src="./src/设置.png" alt="">
+                    <a href="#">设置</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="mid">
+
+
+
+
+        </div>
+
+
+
+        <div class="information">
+            <img src="./src/picture.jpg" alt="" >
+            <div class="name">Rainan</div>
+            <p>励志成为一个糕手</p>
+            <div class="line"></div>
+            <div class="slogan">
+                <p>热爱编程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;喜欢创造</p>
+                <p>专注技术&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;持续学习</p>
+            </div>
+            <div class="web">
+                <a href="https://blog.csdn.net/2502_90388158?spm=1000.2115.3001.5343" target="_blank"><img src="./src/csdn.png" alt=""></a>
+                <a href="https://github.com/china-en" target="_blank"><img src="./src/github.png" alt="" style="width: 86px;"></a>
+
+            </div>
+            <p class="email" ><img src="./src/email.png" alt="" >&nbsp;&nbsp;Rainan@126.com</p>
+
+        </div>
+    </main>
+
+
+
+
+
+    <footer>
+        &copy;2026简化布局|个人名片示例
+    </footer>
+</body>
+</html>
